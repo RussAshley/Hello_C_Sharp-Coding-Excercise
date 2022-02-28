@@ -78,5 +78,17 @@ namespace Hello_C_Sharp_Coding
         {
             this.timer2.Enabled = true;
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Do you want to delete?", "Finish", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2, MessageBoxOptions.DefaultDesktopOnly);
+            
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.pictureBox1.Image = Image.FromFile("C:\\Users\\russe\\OneDrive\\Pictures\\20151121_163257082_iOS.jpg");
+            this.BackgroundImage= Image.FromFile("C:\\Users\\russe\\OneDrive\\Pictures\\20151121_163257082_iOS.jpg");
+        }
     }
 }
