@@ -90,5 +90,37 @@ namespace Hello_C_Sharp_Coding
             this.pictureBox1.Image = Image.FromFile("C:\\Users\\russe\\OneDrive\\Pictures\\20151121_163257082_iOS.jpg");
             this.BackgroundImage= Image.FromFile("C:\\Users\\russe\\OneDrive\\Pictures\\20151121_163257082_iOS.jpg");
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            string msg = this.textBox4.Text;
+            //msg = this.textBox4.Text;
+            MessageBox.Show("Hi : " + msg);
+            MessageBox.Show("Hi : " + msg + " Welcome back!");
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            //string a1;
+            //string a2;
+            //a1 = this.textBox5.Text;
+            //a2= this.textBox6.Text;
+
+            int a1;
+            int a2;
+            int a3;
+            //a1 = Convert.ToInt32( this.textBox5.Text);
+            //a2= Convert.ToInt32(this.textBox6.Text);
+
+            Int32.TryParse(this.textBox5.Text, out a1);
+            Int32.TryParse(this.textBox6.Text, out a2);
+            a3 = a1 + a2;
+            MessageBox.Show( a3.ToString() );
+        }
     }
 }
