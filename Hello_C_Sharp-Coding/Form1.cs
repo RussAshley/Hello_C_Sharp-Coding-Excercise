@@ -111,7 +111,7 @@ namespace Hello_C_Sharp_Coding
             //a1 = this.textBox5.Text;
             //a2= this.textBox6.Text;
 
-            int a1;
+            int a1; // int is for numbers up to 2 billion
             int a2;
             int a3;
             //a1 = Convert.ToInt32( this.textBox5.Text);
@@ -121,6 +121,129 @@ namespace Hello_C_Sharp_Coding
             Int32.TryParse(this.textBox6.Text, out a2);
             a3 = a1 + a2;
             MessageBox.Show( a3.ToString() );
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            long a1; // long and Int64 are the same and interchangeable and for numbers OVER 2 billion
+            Int64 a2;
+            Int64 a3;
+            //a1 = Convert.ToInt32( this.textBox5.Text);
+            //a2= Convert.ToInt32(this.textBox6.Text);
+
+            Int64.TryParse(this.textBox5.Text, out a1);
+            Int64.TryParse(this.textBox6.Text, out a2);
+            a3 = a1 + a2;
+            MessageBox.Show(a3.ToString());
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            float a1; // float for decimals
+            float a2;
+            float a3;
+            //a1 = Convert.ToInt32( this.textBox5.Text);
+            //a2= Convert.ToInt32(this.textBox6.Text);
+
+            float.TryParse(this.textBox5.Text, out a1);
+            float.TryParse(this.textBox6.Text, out a2);
+            a3 = a1 + a2;
+            MessageBox.Show(a3.ToString());
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            double a1; // double for more DP decimals
+            double a2;
+            double a3;
+            //a1 = Convert.ToInt32( this.textBox5.Text);
+            //a2= Convert.ToInt32(this.textBox6.Text);
+
+            double.TryParse(this.textBox5.Text, out a1);
+            double.TryParse(this.textBox6.Text, out a2);
+            a3 = a1 + a2;
+            MessageBox.Show(a3.ToString());
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            decimal a1; // decimal for  even more DP decimals and more accurate
+            decimal a2;
+            decimal a3;
+            //a1 = Convert.ToInt32( this.textBox5.Text);
+            //a2= Convert.ToInt32(this.textBox6.Text);
+
+            decimal.TryParse(this.textBox5.Text, out a1);
+            decimal.TryParse(this.textBox6.Text, out a2);
+            a3 = a1 + a2;
+            MessageBox.Show(a3.ToString());
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            bool b;
+           b= this.button17.Enabled;
+           MessageBox.Show(b.ToString());
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            this.process1.StartInfo.FileName = "C:\\Windows\\System32\\calc";
+            this.process1.Start();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            this.process2.StartInfo.FileName = "C:\\Windows\\System32\\notepad";
+            this.process2.Start();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            this.process2.StartInfo.FileName = "C:\\Program Files (x86)\\GOG Galaxy\\GalaxyClient";
+            this.process2.Start();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            Int32 uyb;
+
+            Int32.TryParse(this.textBox7.Text, out uyb);
+            Int32 curr_yr;
+            curr_yr = DateTime.Now.Year;
+
+            Int32 age = curr_yr - uyb;
+            MessageBox.Show(age.ToString());
+
+            if(age > 35)
+            {
+                MessageBox.Show("OK Boomer!");
+            }
+             else
+            {
+                MessageBox.Show("Just a godam kid!");
+            }
+            
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            Int32 i;
+
+            for(i = 0; i < 20; i++)
+            {
+                MessageBox.Show("I am a For Loop. My number is: "+ i.ToString());
+            }
         }
     }
 }
