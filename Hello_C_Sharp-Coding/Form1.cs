@@ -245,5 +245,231 @@ namespace Hello_C_Sharp_Coding
                 MessageBox.Show("I am a For Loop. My number is: "+ i.ToString());
             }
         }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            Int32 j;
+            for(j=0; j<1000; j++)
+            {
+                this.comboBox1.Items.Add(j.ToString());
+            }
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            Int32 mn;
+            Int32.TryParse(this.textBox8.Text, out mn);
+
+            string month_name = "Unknown";
+
+            if (mn == 1)
+            {
+                //  MessageBox.Show("January");
+                month_name = "January";
+            }
+
+            if (mn == 2)
+            {
+                // MessageBox.Show("Febuary");
+                month_name = "Febuary";
+            }
+
+            if (mn == 3)
+            {
+                // MessageBox.Show("March");
+                month_name = "March";
+            }
+
+            if (mn == 4)
+            {
+                // MessageBox.Show("April");
+                month_name = "April";
+            }
+
+            if (mn == 5)
+            {
+                // MessageBox.Show("May");
+                month_name = "May";
+            }
+
+            if (mn == 6)
+            {
+                //MessageBox.Show("June");
+                month_name = "June";
+            }
+
+            if (mn == 7)
+            {
+                // MessageBox.Show("July");
+                month_name = "July";
+            }
+
+            if (mn == 8)
+            {
+                //MessageBox.Show("JAugust");
+                month_name = "August";
+            }
+
+            if (mn == 9)
+            {
+                //MessageBox.Show("September");
+                month_name = "September";
+            }
+
+            if (mn == 10)
+            {
+                // MessageBox.Show("October");
+                month_name = "October";
+            }
+
+            if (mn == 11)
+            {
+                // MessageBox.Show("November");
+                month_name = "November";
+            }
+
+            if (mn == 12)
+            {
+                // MessageBox.Show("December");
+                month_name = "December";
+            }
+
+            MessageBox.Show(month_name);
+
+
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            Int32 mn;
+            Int32.TryParse(this.textBox8.Text, out mn);
+            string month_name = "";
+            switch(mn)
+
+            { case 1:
+                    month_name = "January";
+                    break;
+
+                case 2:
+                    month_name = "Febuary";
+                    break;
+
+                case 3:
+                    month_name = "March";
+                    break;
+
+                case 4:
+                    month_name = "April";
+                    break;
+
+                case 5:
+                    month_name = "May";
+                    break;
+
+                case 6:
+                    month_name = "June";
+                    break;
+
+                case 7:
+                    month_name = "July";
+                    break;
+
+                case 8:
+                    month_name = "August";
+                    break;
+
+                case 9:
+                    month_name = "September";
+                    break;
+
+                case 10:
+                    month_name = "October";
+                    break;
+
+                case 11:
+                    month_name = "November";
+                    break;
+
+                case 12:
+                    month_name = "December";
+                    break;
+
+
+                default:
+
+                    month_name = "Must be between 1 and 12";
+                    break;
+
+            }
+
+            MessageBox.Show(month_name);
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            string month_name;
+            month_name = this.textBox9.Text;
+            string month_number;
+
+
+            switch(month_name)
+            {
+                case "January":
+                    month_number = " 1";
+                    break;
+
+                case "Febuary":
+                    month_number = " 2";
+                    break;
+
+                case "March":
+                    month_number = " 3";
+                    break;
+
+                case "April":
+                    month_number = " 4";
+                    break;
+
+                case "May":
+                    month_number = " 5";
+                    break;
+
+                case "June":
+                    month_number = " 6";
+                    break;
+
+                case "July":
+                    month_number = " 7";
+                    break;
+
+                case "August":
+                    month_number = " 8";
+                    break;
+
+                case "September":
+                    month_number = " 9";
+                    break;
+
+                case "October":
+                    month_number = " 10";
+                    break;
+
+
+                case "November":
+                    month_number = " 11";
+                    break;
+
+                case "December":
+                    month_number = " 12";
+                    break;
+
+                default:
+                    month_number = " Please check spelling;";
+
+                    break;
+
+            }
+            MessageBox.Show(month_number);
+        }
     }
 }

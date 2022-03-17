@@ -74,11 +74,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.button23 = new System.Windows.Forms.Button();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.button27 = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button26 = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.process1 = new System.Diagnostics.Process();
             this.process2 = new System.Diagnostics.Process();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.button24 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -92,6 +102,7 @@
             this.tabPage8.SuspendLayout();
             this.tabPage9.SuspendLayout();
             this.tabPage10.SuspendLayout();
+            this.tabPage11.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -211,6 +222,7 @@
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Controls.Add(this.tabPage10);
+            this.tabControl1.Controls.Add(this.tabPage11);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -565,6 +577,100 @@
             this.button23.UseVisualStyleBackColor = true;
             this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.comboBox1);
+            this.tabPage10.Controls.Add(this.button25);
+            this.tabPage10.Controls.Add(this.button24);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(678, 349);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "For Loop";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(228, 216);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 2;
+            // 
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(228, 147);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(75, 23);
+            this.button25.TabIndex = 1;
+            this.button25.Text = "Add Item";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(228, 27);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(129, 54);
+            this.button24.TabIndex = 0;
+            this.button24.Text = "Show Msg";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.Controls.Add(this.button28);
+            this.tabPage11.Controls.Add(this.textBox9);
+            this.tabPage11.Controls.Add(this.label3);
+            this.tabPage11.Controls.Add(this.button27);
+            this.tabPage11.Controls.Add(this.textBox8);
+            this.tabPage11.Controls.Add(this.label2);
+            this.tabPage11.Controls.Add(this.button26);
+            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(678, 349);
+            this.tabPage11.TabIndex = 10;
+            this.tabPage11.Text = "Switch case";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // button27
+            // 
+            this.button27.Location = new System.Drawing.Point(356, 113);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(122, 23);
+            this.button27.TabIndex = 3;
+            this.button27.Text = "Show via switch case";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(300, 75);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(190, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Month Number";
+            // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(239, 113);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(75, 23);
+            this.button26.TabIndex = 0;
+            this.button26.Text = "Show Month";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
             // timer2
             // 
             this.timer2.Enabled = true;
@@ -591,26 +697,31 @@
             this.process2.StartInfo.UserName = "";
             this.process2.SynchronizingObject = this;
             // 
-            // tabPage10
+            // button28
             // 
-            this.tabPage10.Controls.Add(this.button24);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(678, 349);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "For Loop";
-            this.tabPage10.UseVisualStyleBackColor = true;
+            this.button28.Location = new System.Drawing.Point(356, 241);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(139, 23);
+            this.button28.TabIndex = 6;
+            this.button28.Text = "Show Name via switch case";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
-            // button24
+            // textBox9
             // 
-            this.button24.Location = new System.Drawing.Point(259, 139);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(129, 54);
-            this.button24.TabIndex = 0;
-            this.button24.Text = "Show Msg";
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
+            this.textBox9.Location = new System.Drawing.Point(300, 203);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(190, 206);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Month Name";
             // 
             // Form1
             // 
@@ -638,6 +749,8 @@
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
             this.tabPage10.ResumeLayout(false);
+            this.tabPage11.ResumeLayout(false);
+            this.tabPage11.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -693,6 +806,16 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label3;
     }
 }
 
